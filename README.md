@@ -60,7 +60,8 @@ Physical hardware is tightly coupled with this system:
 - **LCD Display** – real time game rendering  
 - **LEDs** – status and event indication  
 - **Buzzer** – audio feedback for actions and events  
-- **7-Segment Display** – output display  
+- **7-Segment Display** – output display
+- **Potentiometer**  - real time volume/ difficulty control
 
 All HAL drivers have direct control over each hardware component making accurate scheduling crucial.
 
