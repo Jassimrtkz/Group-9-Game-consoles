@@ -12,9 +12,9 @@ The system architecture is built around the idea of an event-driven system. Each
 
 Core design considerations included:
 - Avoiding blocking delays to ensure responsiveness
-- Ensuring constant processing of inputs (detection and debounce)
+- Ensuring constant processing of inputs such as detection and debounce 
 - Managing multiple hardware modules simultaneously with no timing issues
-- Good code design for easy reusability, scalability, and readability
+- Good code design for easy reusability, scalability and readability
 
 The system is an example of how embedded software has to find the right balance among hardware limitations, timing precision and efficiency.
 
@@ -34,7 +34,7 @@ Interactivity and timely responsiveness are emphasized in this game.
 
 ### 🧩 Tetris
 A well-structured, grid based game with collision detection and falling blocks. Important features include:
-- Matrix/grid representation  
+- Matrix(grid) representation  
 - Rotation and boundary validation  
 - Continuous screen refresh logic  
 
@@ -57,10 +57,10 @@ Real-time control and continuous updates are important aspects of this game
 Physical hardware is tightly coupled with this system:
 - **STM32 Microcontroller** – core processing unit  
 - **Push Buttons / Joystick** – user input  
-- **LCD Display** – real-time game rendering  
+- **LCD Display** – real time game rendering  
 - **LEDs** – status and event indication  
 - **Buzzer** – audio feedback for actions and events  
-- **(Optional) 7-Segment Display** – score/output display  
+- **7-Segment Display** – output display  
 
 All HAL drivers have direct control over each hardware component making accurate scheduling crucial.
 
@@ -71,7 +71,7 @@ All HAL drivers have direct control over each hardware component making accurate
 Effective practices for embedded software design are demonstrated in the design of this project:
 
 - Modular separation of game logic  
-- Clear state-based control system  
+- Clear state based control system  
 - Non blocking timing using system ticks  
 - Reusable input and output handling functions  
 
@@ -83,7 +83,7 @@ This allows the design to ensure that introducing new games doesn’t affect oth
 
 - Real-time system with **no reliance on blocking delays**  
 - Stable input processing using **debouncing and edge detection**  
-- Multi-game integration within a **single embedded system**  
+- Multi game integration within a **single embedded system**  
 - Efficient handling of **hardware concurrency**  
 - Clean and maintainable **modular C codebase**  
 
