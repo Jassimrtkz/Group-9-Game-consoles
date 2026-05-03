@@ -1,6 +1,6 @@
 # 🎮 Group 9 Embedded Game Console
 
-The idea behind developing a multi-game embedded console as part of an engineering coursework assignment is described here. The device, coded fully in C and developed using the STM32 microcontroller, comprises three games inspired by the classics: **Micro Fighting** , **Tetris** , and **Flappy Bird**.
+The idea behind developing a multi-game embedded console as part of an engineering coursework assignment is described here. The device, coded fully in C and developed using the STM32 microcontroller, comprises three games inspired by the classics: **Micro Fighter** , **Tetris** , and **Flappy Bird**.
 
 Unlike software-only implementations, this project operates under strict hardware and real-time constraints, requiring careful coordination between input handling, display updates, and system timing. The result is a responsive and interactive system that demonstrates practical embedded systems engineering rather than theoretical design.
 
